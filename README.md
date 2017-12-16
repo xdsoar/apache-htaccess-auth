@@ -13,7 +13,7 @@ Created and Maintained by : Mrunal Nachankar "<mrunal4888@gmail.com>"
 * Start new docker container. We have 2 ways to do it:
     * Start container with docker run
         
-            docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mru/apache-htaccess-auth:latest 
+            docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mrunal4/apache-htaccess-auth:latest 
 
     * Start container with docker-compose
         
@@ -37,18 +37,18 @@ Created and Maintained by : Mrunal Nachankar "<mrunal4888@gmail.com>"
 
  1. First pull the docker image 
 
-        docker pull mru/apache-htaccess-auth:latest
+        docker pull mrunal4/apache-htaccess-auth:latest
     > It will pull image layer wise. Once completed bash prompt will be released to enter new command.
 
  2. Check the image is listed in the images list
 
         docker images
-    > Check for **mru/apache-htaccess-auth:latest** under **REPOSITORY** column values
+    > Check for **mrunal4/apache-htaccess-auth:latest** under **REPOSITORY** column values
 
  3. Now time has come to start new docker container with the pulled image. We have 2 ways to do it:
     * Start container with docker run
         
-            docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mru/apache-htaccess-auth:latest 
+            docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mrunal4/apache-htaccess-auth:latest 
 
     * Start container with docker-compose
         
