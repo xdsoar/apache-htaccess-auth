@@ -1,4 +1,4 @@
-# docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mru/apache-htaccess-auth:latest 
+# docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mrunal4/apache-htaccess-auth:latest 
 # set the base image to phusion/baseimage(Ubuntu based)
 FROM phusion/baseimage:latest 
 
