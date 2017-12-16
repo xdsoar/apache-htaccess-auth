@@ -1,0 +1,25 @@
+# apache with htaccess auth
+# docker run --rm -d -t -i -p 80:80 -p 443:443  -v /storage/Docker/html:/var/www/html --restart=always  --name=apache-htaccess-auth  mru/apache-htaccess-auth:latest 
+# Access via "http://localhost:80" (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+
+version: '2'
+
+services:
+
+  # Create apache-htaccess-auth container
+  apache-htaccess-auth:
+    image: mru/apache-htaccess-auth:latest
+    container_name: apache-htaccess-auth
+    restart: always
+    environment:
+      - TERM=xterm
+    hostname: 'apache-htaccess-auth'
+  #    domainname: 'mz1' # Change to the hostname you will use
+    ports:
+      - "80:80"             #http
+      - "443:443"           #https
+      
+    volumes:
+      # requires proper authorizations, see rights (incase of 403-forbidden error on web browser, please check /data/media permissions)
+      - /storage/Docker/html:/var/www/html
