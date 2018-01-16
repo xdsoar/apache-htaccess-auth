@@ -19,7 +19,7 @@ Created and Maintained by : Mrunal Nachankar "<mrunal4888@gmail.com>"
         
             docker-compose up -d
 
- 2. Check on web browser 
+ 2. Check on web browser (And user credentials in create-users.csv)
     * If port is not changed. 
 
             http://localhost 
@@ -53,7 +53,7 @@ Created and Maintained by : Mrunal Nachankar "<mrunal4888@gmail.com>"
     * Start container with docker-compose
         
             docker-compose up -d
- 4. Check on web browser 
+ 4. Check on web browser (And user credentials in create-users.csv)
     * If port is not changed. 
 
             http://localhost 

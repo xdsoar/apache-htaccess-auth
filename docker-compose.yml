@@ -23,7 +23,8 @@ services:
     volumes:
       # requires proper authorizations, see rights (incase of 403-forbidden error on web browser, please check /data/media permissions)
       - /storage/Docker/html:/var/www/html
+      - /storage/Docker/backup:/backup
       - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf 
       - ./.htpasswd:/etc/apache2/.htpasswd 
-      - ./create-htaccess-users.sh /root/create-htaccess-users.sh
-      - ./create_users.csv /root/create_users.csv
+      - ./create-htaccess-users.sh:/root/create-htaccess-users.sh
+      - ./create_users.csv:/root/create_users.csv
