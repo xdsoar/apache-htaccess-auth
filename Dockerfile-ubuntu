@@ -14,7 +14,7 @@ RUN apt update \
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf 
 COPY .htpasswd /etc/apache2/.htpasswd 
 COPY create-htaccess-users.sh /root/
-COPY create_users.csv /root/
+COPY create-users.csv /root/
 
 # To apply changes start and reload apache
 RUN service apache2 restart \

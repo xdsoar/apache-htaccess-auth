@@ -32,7 +32,7 @@ if [ ${no_of_arguments} == 1 ]; then
     else
         echo "File ${FILE_NAMES}. Oops something went wrong, please contact administrator."
     fi
-    #FILE_NAMES=( "/root/create_users.csv" );                 # For testing purpose
+    #FILE_NAMES=( "/root/create-users.csv" );                 # For testing purpose
     echo "File names are: ${FILE_NAMES[@]} and Timestamp: $DateTime_STAMP2";
     #echo "array : Len of array ${#FILE_NAMES[@]} : Len of first ${#FILE_NAMES} : Array ${FILE_NAMES[@]}"; # : Testing purpose printing
 

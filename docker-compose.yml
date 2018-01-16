@@ -27,4 +27,4 @@ services:
       - ./000-default.conf:/etc/apache2/sites-enabled/000-default.conf 
       - ./.htpasswd:/etc/apache2/.htpasswd 
       - ./create-htaccess-users.sh:/root/create-htaccess-users.sh
-      - ./create_users.csv:/root/create_users.csv
+      - ./create-users.csv:/root/create-users.csv
